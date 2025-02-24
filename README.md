@@ -81,12 +81,12 @@ Feel free to adjust parameters such as filter window length, interpolation resol
 ### Segment-wise Analysis
 
 - **Linear Regression:**  
-  Each segment is analyzed via linear regression to estimate the slope \( m \) (which corresponds to the power-law exponent) and intercept \( b \).
+  Each segment is analyzed via linear regression to estimate the slope $$\( m \)$$ (which corresponds to the power-law exponent) and intercept $$\( b \)$$
 
 - **Statistical Testing:**  
   T-tests are conducted on the regression results to compare the estimated slope against target theoretical values. The t-statistic is computed as:
-  $$t = \frac{m - \text{target}}{se_m},
-  where $$\( se_m \)$$ is the standard error of $$\( m \).$$
+  $$t = \frac{m - \text{target}}{se_m}$$
+  where $$\( se_m \)$$ is the standard error of $$\( m \)$$
 
 ## Acknowledgements
 
