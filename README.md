@@ -1,7 +1,5 @@
 # EnergySpectrum
 
-EnergySpectrum of turbulence Analysis
-
 ## Features
 
 - **Data Analysis:**  
