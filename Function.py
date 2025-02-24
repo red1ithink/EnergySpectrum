@@ -396,7 +396,6 @@ def enstrophy(file, nu, visualize=False):
     
     return enstrophy_value, label
 
-
 def kdiss(time, nu):
     L_diss = np.sqrt(nu*time)
     k_diss = 1/L_diss
