@@ -1,4 +1,4 @@
-# Turbulent Energy Spectrum
+# Two dimensional Turbulent Energy Spectrum
 
 ## Features
 
