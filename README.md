@@ -58,7 +58,7 @@ Feel free to adjust parameters such as filter window length, interpolation resol
 
 - **Logarithmic Transformation:**  
   By converting $$\( k \) and $$\( E(k) \) to their natural logarithms, a power-law relationship  
-  $$E(k) \sim k^n
+  $$E(k) \sim k^n$$
     
   becomes linear:  
   $$ln E(k) = n \ln k + \ln C.
