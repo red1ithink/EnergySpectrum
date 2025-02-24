@@ -57,7 +57,7 @@ def tracking2_data(k, ek, pen, name):
     cost = LogLogCost().fit(signal)
 
     # PELT Algorithm
-    algo = rpt.Dynp(custom_cost=cost).fit(signal)
+    algo = rpt.Pelt(custom_cost=cost).fit(signal)
     pen = pen #Penalty
     bkps = algo.predict(pen=pen)
 
@@ -338,7 +338,7 @@ def tracking_data(k, ek, pen, name):
 
     cost = LogLogCost().fit(signal)
 
-    algo = rpt.Dynp(custom_cost=cost).fit(signal)
+    algo = rpt.Pelt(custom_cost=cost).fit(signal)
     pen = pen 
     bkps = algo.predict(pen=pen)
 
@@ -392,5 +392,3 @@ def tracking_data(k, ek, pen, name):
     plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.grid(True, which='both', alpha=0.4)
     plt.tight_layout()
-
-
