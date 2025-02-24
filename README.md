@@ -88,7 +88,7 @@ Feel free to adjust parameters such as filter window length, interpolation resol
 
 ## Acknowledgements
 
-[ruptures](https://centre-borelli.github.io/ruptures)
+[ruptures]([https://centre-borelli.github.io/ruptures](https://github.com/deepcharles/ruptures))
 
 ---
 ## Reference
