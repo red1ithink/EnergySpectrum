@@ -72,7 +72,7 @@ Feel free to adjust parameters such as filter window length, interpolation resol
 ### Change Point Detection with PELT
 
 - **Custom Cost Function:**  
-  The project defines a cost function that, for any segment $$([s, e)\), computes the sum of squared errors (SSE) from a linear fit:
+  The project defines a cost function that, for any segment $$([s, e)\)$$, computes the sum of squared errors (SSE) from a linear fit:
   $${SSE}(s,e) = \sum_{i=s}^{e-1} \left[\ln E(k_i) - (m\,\ln k_i + b)\right]^2.$$
   
 - **PELT Algorithm:**  
