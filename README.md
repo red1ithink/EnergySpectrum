@@ -2,10 +2,13 @@
 
 ## Features
 
+- **Visualizing:**  
+  Visualize velocity & vorticity field.
+
 - **Data Analysis:**  
-  Import and process energy spectrum data using Python libraries.
+  Calculate and process data(energy spectrum, dissipation rate, enstrophy and energy_flux).
   
-- **Change Point Detection:**  
+- **Change Point Detection:**
   Utilize advanced algorithms (such as the PELT algorithm with a custom cost function) to segment the spectrum into distinct scaling regions.
   
 - **Segment Fitting:**  
