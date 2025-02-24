@@ -1,51 +1,25 @@
 # EnergySpectrum
 
-EnergySpectrum is a Python-based project designed to analyze, visualize, and interpret energy spectrum data. Whether you're a researcher, student, or hobbyist, this project provides the tools necessary to work with spectral data efficiently and effectively.
+EnergySpectrum is a Python-based project designed to analyze, visualize, and interpret energy spectrum data.
 
 ## Features
 
 - **Data Analysis:**  
   Import and process energy spectrum data using robust Python libraries.
   
-- **Visualization:**  
-  Generate high-quality log–log plots and charts to visually interpret spectral distributions and scaling behavior.
-  
 - **Change Point Detection:**  
   Utilize advanced algorithms (such as the PELT algorithm with a custom cost function) to segment the spectrum into distinct scaling regions.
   
 - **Segment Fitting:**  
   Apply linear regression on each segment to estimate power-law exponents and perform statistical tests to compare against theoretical models.
-  
-- **Jupyter Integration:**  
-  Leverage interactive analysis through Jupyter notebooks for experimentation and rapid prototyping.
-  
-- **Modular Codebase:**  
-  Easily extend or modify the project to fit custom analysis needs.
+
 
 ## Getting Started
 
 ### Prerequisites
 
-Ensure you have the following installed on your system:
+- [Python 3.12.8]
 
-- [Python 3.7+](https://www.python.org/downloads/)
-- [pip](https://pip.pypa.io/en/stable/installation/)
-- (Optional) [Jupyter Notebook](https://jupyter.org/install)
-
-### Installation
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/red1ithink/EnergySpectrum.git
-   cd EnergySpectrum
-   ```
-
-2. **Install dependencies:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ## Usage
 
@@ -54,10 +28,10 @@ Ensure you have the following installed on your system:
 The main analysis script performs the following steps:
 
 1. **Data Loading:**  
-   Loads \( k \) and \( E(k) \) data from specified files using a custom `get_ek` function.
+   Loads $$\( k \) and $$\( E(k) \) data from specified files using a custom `get_ek` function.
 
 2. **Preprocessing:**  
-   - Applies a logarithmic transformation to both \( k \) and \( E(k) \) (using natural logarithm via `np.log`).
+   - Applies a logarithmic transformation to both $$\( k \) and $$\( E(k) \) (using natural logarithm via `np.log`).
    - Smooths the log-transformed data with a Savitzky–Golay filter to reduce noise.
    - Interpolates the smoothed data uniformly in log-space to ensure stable segmentation and regression.
 
@@ -65,7 +39,7 @@ The main analysis script performs the following steps:
    Utilizes the PELT algorithm with a custom cost function (based on least-squares linear regression error) to detect change points in the log–log data.
 
 4. **Segment Fitting and Statistical Analysis:**  
-   For each detected segment, the project performs linear regression to extract the slope (indicating the power-law exponent) and applies t-tests to evaluate whether the estimated slopes match theoretical expectations (e.g., \(-5/3\) or \(-4\)).
+   For each detected segment, the project performs linear regression to extract the slope (indicating the power-law exponent) and applies t-tests to evaluate whether the estimated slopes match theoretical expectations (e.g., $$\(-5/3\) or $$\(-4\)).
 
 5. **Visualization:**  
    Generates log–log plots of the original spectrum along with the fitted segments, using distinct colors and line styles for clear differentiation. Segment indices and corresponding \( k \)-ranges are also printed to the console.
