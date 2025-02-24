@@ -39,10 +39,10 @@ The main analysis script performs the following steps:
    Utilizes the PELT algorithm with a custom cost function (based on least-squares linear regression error) to detect change points in the log–log data.
 
 4. **Segment Fitting and Statistical Analysis:**  
-   For each detected segment, the project performs linear regression to extract the slope (indicating the power-law exponent) and applies t-tests to evaluate whether the estimated slopes match theoretical expectations (e.g., $$\(-5/3\) or $$\(-4\)).
+   For each detected segment, the project performs linear regression to extract the slope (indicating the power-law exponent) and applies t-tests to evaluate whether the estimated slopes match theoretical expectations (e.g., $$\(-5/3\), $$\(-4\)).
 
 5. **Visualization:**  
-   Generates log–log plots of the original spectrum along with the fitted segments, using distinct colors and line styles for clear differentiation. Segment indices and corresponding \( k \)-ranges are also printed to the console.
+   Generates log–log plots of the original spectrum along with the fitted segments, using distinct colors and line styles for clear differentiation. Segment indices and corresponding $$\( k \)-ranges are also printed to the console.
 
 To run the analysis, simply execute the main script:
 
@@ -57,14 +57,11 @@ Feel free to adjust parameters such as filter window length, interpolation resol
 ### Data Transformation
 
 - **Logarithmic Transformation:**  
-  By converting \( k \) and \( E(k) \) to their natural logarithms, a power-law relationship  
-  \[
-  E(k) \sim k^n
-  \]  
+  By converting $$\( k \) and $$\( E(k) \) to their natural logarithms, a power-law relationship  
+  $$E(k) \sim k^n
+    
   becomes linear:  
-  \[
-  \ln E(k) = n \ln k + \ln C.
-  \]
+  $$ln E(k) = n \ln k + \ln C.
   
 - **Savitzky–Golay Smoothing:**  
   This filter applies a local polynomial fit over a moving window, reducing noise while preserving key spectral features.
