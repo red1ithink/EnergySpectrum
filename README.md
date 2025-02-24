@@ -73,7 +73,7 @@ Feel free to adjust parameters such as filter window length, interpolation resol
 
 - **Custom Cost Function:**  
   The project defines a cost function that, for any segment $$([s, e)\), computes the sum of squared errors (SSE) from a linear fit:
-  $$text{SSE}(s,e) = \sum_{i=s}^{e-1} \left[\ln E(k_i) - (m\,\ln k_i + b)\right]^2.$$
+  $${SSE}(s,e) = \sum_{i=s}^{e-1} \left[\ln E(k_i) - (m\,\ln k_i + b)\right]^2.$$
   
 - **PELT Algorithm:**  
   The Pruned Exact Linear Time (PELT) algorithm minimizes the total cost (segment costs plus a penalty for additional change points) to determine the optimal segmentation of the spectrum.
@@ -85,18 +85,8 @@ Feel free to adjust parameters such as filter window length, interpolation resol
 
 - **Statistical Testing:**  
   T-tests are conducted on the regression results to compare the estimated slope against target theoretical values. The t-statistic is computed as:
-  \[
-  t = \frac{m - \text{target}}{se_m},
-  \]
-  where \( se_m \) is the standard error of \( m \).
-
-## Contributing
-
-Contributions, bug reports, and feature requests are welcome! Please fork the repository and submit pull requests or open an issue to share your ideas for improvements.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+  $$t = \frac{m - \text{target}}{se_m},
+  where $$\( se_m \)$$ is the standard error of $$\( m \).$$
 
 ## Acknowledgements
 
