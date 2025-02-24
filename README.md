@@ -39,10 +39,10 @@ The main analysis script performs the following steps:
    Utilizes the PELT algorithm with a custom cost function (based on least-squares linear regression error) to detect change points in the log–log data.
 
 4. **Segment Fitting and Statistical Analysis:**  
-   For each detected segment, the project performs linear regression to extract the slope (indicating the power-law exponent) and applies t-tests to evaluate whether the estimated slopes match theoretical expectations (e.g., $$\(-5/3\), $$\(-4\)).
+   For each detected segment, the project performs linear regression to extract the slope (indicating the power-law exponent) and applies t-tests to evaluate whether the estimated slopes match theoretical expectations (e.g., $$\(-5/3\)$$, $$\(-4\)$$).
 
 5. **Visualization:**  
-   Generates log–log plots of the original spectrum along with the fitted segments, using distinct colors and line styles for clear differentiation. Segment indices and corresponding $$\( k \)-ranges are also printed to the console.
+   Generates log–log plots of the original spectrum along with the fitted segments, using distinct colors and line styles for clear differentiation. Segment indices and corresponding $$\( k \)$$-ranges are also printed to the console.
 
 To run the analysis, simply execute the main script:
 
@@ -57,25 +57,23 @@ Feel free to adjust parameters such as filter window length, interpolation resol
 ### Data Transformation
 
 - **Logarithmic Transformation:**  
-  By converting $$\( k \) and $$\( E(k) \) to their natural logarithms, a power-law relationship  
+  By converting $$\( k \)$$ and $$\( E(k) \)$$ to their natural logarithms, a power-law relationship  
   $$E(k) \sim k^n$$
     
   becomes linear:  
-  $$ln E(k) = n \ln k + \ln C.
+  $$ln E(k) = n \ln k + \ln C$$
   
 - **Savitzky–Golay Smoothing:**  
   This filter applies a local polynomial fit over a moving window, reducing noise while preserving key spectral features.
 
 - **Uniform Interpolation in Log-Space:**  
-  Although the original \( k \) data might be uniformly spaced, their logarithms typically are not. Uniformly resampling the log-transformed data ensures a consistent grid for reliable change point detection and regression analysis.
+  Although the original $$\( k \)$$ data might be uniformly spaced, their logarithms typically are not. Uniformly resampling the log-transformed data ensures a consistent grid for reliable change point detection and regression analysis.
 
 ### Change Point Detection with PELT
 
 - **Custom Cost Function:**  
-  The project defines a cost function that, for any segment \([s, e)\), computes the sum of squared errors (SSE) from a linear fit:
-  \[
-  \text{SSE}(s,e) = \sum_{i=s}^{e-1} \left[\ln E(k_i) - (m\,\ln k_i + b)\right]^2.
-  \]
+  The project defines a cost function that, for any segment $$([s, e)\), computes the sum of squared errors (SSE) from a linear fit:
+  $$text{SSE}(s,e) = \sum_{i=s}^{e-1} \left[\ln E(k_i) - (m\,\ln k_i + b)\right]^2.$$
   
 - **PELT Algorithm:**  
   The Pruned Exact Linear Time (PELT) algorithm minimizes the total cost (segment costs plus a penalty for additional change points) to determine the optimal segmentation of the spectrum.
