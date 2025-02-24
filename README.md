@@ -1,5 +1,5 @@
 # Two dimensional Turbulent Energy Spectrum
-Tracking range having kolmogorov slope
+Tracking ranges which meet kolmogorov's law ($$\(-5/3\)$$, $$\(-4\)$$)
 
 ## Features
 
