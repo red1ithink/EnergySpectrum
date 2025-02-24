@@ -1,4 +1,4 @@
-# EnergySpectrum
+# Turbulent Energy Spectrum
 
 ## Features
 
