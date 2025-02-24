@@ -1,11 +1,11 @@
 # EnergySpectrum
 
-EnergySpectrum is a Python-based project designed to analyze, visualize, and interpret energy spectrum data.
+EnergySpectrum of turbulence Analysis
 
 ## Features
 
 - **Data Analysis:**  
-  Import and process energy spectrum data using robust Python libraries.
+  Import and process energy spectrum data using Python libraries.
   
 - **Change Point Detection:**  
   Utilize advanced algorithms (such as the PELT algorithm with a custom cost function) to segment the spectrum into distinct scaling regions.
