@@ -8,7 +8,7 @@ import pandas as pd
 
 #####extracting velocity(ux, uy)#####
 
-base_path = '../../Downloads/2x'
+base_path = '../../Dropbox/2D_valid'
 
 all_folders = os.listdir(base_path)
 
@@ -17,7 +17,7 @@ numeric_folders = sorted(
     key=lambda x: float(x)
 )
 
-output_dir = '../2x/u'
+output_dir = '../valid/u'
 os.makedirs(output_dir, exist_ok=True)
 
 for folder in numeric_folders:
@@ -83,7 +83,6 @@ else:
 
 #####extracting vorticity######
 
-base_path = "../2D_valid"
 all_folders = os.listdir(base_path)
 
 numeric_folders = sorted(
@@ -91,7 +90,7 @@ numeric_folders = sorted(
     key=lambda x: float(x)
 )
 
-output_dir = "valid_data/vor"
+output_dir = '../valid/vor'
 os.makedirs(output_dir, exist_ok=True)
 
 for folder in numeric_folders:
