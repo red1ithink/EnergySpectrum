@@ -40,7 +40,8 @@ def tracking2_data(k, ek, pen, name):
             self.X = signal[:, 0]
             self.Y = signal[:, 1]
             return self
-            
+        
+
         def error(self, start, end):
             x_seg = self.X[start:end]
             y_seg = self.Y[start:end]
