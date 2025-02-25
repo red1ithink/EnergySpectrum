@@ -61,6 +61,8 @@ def tracking2_data(k, ek, pen, name):
     algo = rpt.Pelt(custom_cost=cost).fit(signal)
     pen = pen #Penalty
     bkps = algo.predict(pen=pen)
+    rpt.display(signal, bkps, figsize=(10, 6))
+    plt.show()
 
     segments = []
     start = 0
@@ -342,6 +344,9 @@ def tracking_data(k, ek, pen, name):
     algo = rpt.Pelt(custom_cost=cost).fit(signal)
     pen = pen 
     bkps = algo.predict(pen=pen)
+    rpt.display(signal, bkps, figsize=(10, 6))
+    plt.show()
+
 
     segments = []
     start = 0
