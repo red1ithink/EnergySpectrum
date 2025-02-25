@@ -10,6 +10,7 @@ from scipy import stats
 import ruptures as rpt
 from scipy.interpolate import interp1d
 
+## interpolation
 def tracking2_data(k, ek, pen, name):
 
     log_k = np.log(k)
@@ -216,6 +217,7 @@ def tracking2(file, pen, name):
     plt.grid(True, which='both', alpha=0.4)
     plt.tight_layout()
 
+## Non interpolation
 def tracking(file, pen, name):
     k, ek = get_ek(file)
     k = k[1:]
