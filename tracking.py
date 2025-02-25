@@ -87,7 +87,7 @@ def tracking2_data(k, ek, pen, name):
             results.append((target, p_val))
         best_target, best_p = max(results, key=lambda x: x[1])
         if best_p > 0.05:
-            return f"Slope {m:.3f}, Near slope {best_target:.3f} (p={best_p:.2e})"
+            return f"Slope {m:.3f}"
         else:
             return f"Slope {m:.3f}"
 
@@ -186,7 +186,7 @@ def tracking2(file, pen, name):
             results.append((target, p_val))
         best_target, best_p = max(results, key=lambda x: x[1])
         if best_p > 0.05:
-            return f"Slope {m:.3f}, Near slope {best_target:.3f} (p={best_p:.2e})"
+            return f"Slope {m:.3f}"
         else:
             return f"Slope {m:.3f}"
 
@@ -277,7 +277,7 @@ def tracking(file, pen, name):
             results.append((target, p_val))
         best_target, best_p = max(results, key=lambda x: x[1])
         if best_p > 0.05:
-            return f"Slope {m:.3f}, Near slope {best_target:.3f} (p={best_p:.2e})"
+            return f"Slope {m:.3f}"
         else:
             return f"Slope {m:.3f}"
 
@@ -366,7 +366,7 @@ def tracking_data(k, ek, pen, name):
             results.append((target, p_val))
         best_target, best_p = max(results, key=lambda x: x[1])
         if best_p > 0.05:
-            return f"Slope {m:.3f}, Near slope {best_target:.3f} (p={best_p:.2e})"
+            return f"Slope {m:.3f}"
         else:
             return f"Slope {m:.3f}"
 
