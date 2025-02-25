@@ -2,7 +2,7 @@
 files = [
     #'../proceed_data/proceed_data_v_given/processed_data_u/0_ux_uy_data.txt',
     #'../proceed_data/proceed_data_v_given/processed_data_u/0.2_ux_uy_data.txt',
-    '../proceed_data/proceed_data_v_given/processed_data_u/0.4_ux_uy_data.txt',
+    #'../proceed_data/proceed_data_v_given/processed_data_u/0.4_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_given/processed_data_u/1_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_given/processed_data_u/5_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_given/processed_data_u/10_ux_uy_data.txt',
@@ -93,6 +93,7 @@ files2_vor = [
 files3 = [
     # '../../Dropbox/datafile/2x_data/0.4_ux_uy_data.txt',
     # '../../Dropbox/datafile/2x_data/1_ux_uy_data.txt',
+    '../proceed_data/proceed_data_v_half/processed_data_u/1_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_u/5_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_u/10_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_u/15_ux_uy_data.txt',
@@ -108,8 +109,8 @@ files3 = [
     '../proceed_data/proceed_data_v_half/processed_data_u/110_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_u/130_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_u/150_ux_uy_data.txt',
-    '../proceed_data/proceed_data_v_half/processed_data_u/170_ux_uy_data.txt',
-    '../proceed_data/proceed_data_v_half/processed_data_u/186_ux_uy_data.txt',
+    # '../proceed_data/proceed_data_v_half/processed_data_u/170_ux_uy_data.txt',
+    # '../proceed_data/proceed_data_v_half/processed_data_u/186_ux_uy_data.txt',
 ]
 
 files3_vor = [
@@ -136,6 +137,7 @@ files3_vor = [
 files4 = [
     # '../../Dropbox/datafile/2x_data/0.4_ux_uy_data.txt',
     # '../../Dropbox/datafile/2x_data/1_ux_uy_data.txt',
+    '../2x/u/1_ux_uy_data.txt',
     '../2x/u/5_ux_uy_data.txt',
     '../2x/u/10_ux_uy_data.txt',
     '../2x/u/15_ux_uy_data.txt',
