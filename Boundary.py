@@ -38,3 +38,28 @@ def boundary(files_list, nu_values):
         k_diss_vals_dict[f"k_diss_vals{i}"] = k_diss_vals
 
     return times_dict, max_ks_dict, k_diss_vals_dict
+
+def boundary2(files_list, nu_values):
+    times_dict = {}
+    max_ks_dict = {}
+    k_diss_vals_dict = {}
+
+    for i, (files, nu) in enumerate(zip(files_list, nu_values), start=1):
+        times = []
+        max_ks = []
+        k_diss_vals = []
+
+        for file in files:
+            k, e_k = get_ek(file)
+            omega, label = get_vorticity(file)
+            max_index = np.argmax(e_k)
+            max_k = k[max_index]
+            times.append(label)
+            max_ks.append(max_k)
+            k_diss_vals.append(k_v(omega, nu))
+
+        times_dict[f"times{i}"] = times
+        max_ks_dict[f"max_ks{i}"] = max_ks
+        k_diss_vals_dict[f"k_diss_vals{i}"] = k_diss_vals
+
+    return times_dict, max_ks_dict, k_diss_vals_dict

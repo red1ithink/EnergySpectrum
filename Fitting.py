@@ -62,7 +62,7 @@ def fitting(files, k_i, nu, csv_filename):
     df.to_csv(csv_filename, index=False)
     print(f"Results saved to {csv_filename}")
 
-def average_fitting(files, k_i, nu, csv_filename, title="Averaged E(k)"):
+def average_fitting(files, k_i, nu, csv_filename, title):
     all_ek = []
     k_diss_vals = []
 
@@ -121,7 +121,7 @@ def average_fitting(files, k_i, nu, csv_filename, title="Averaged E(k)"):
 
     print(f"Energy(ENG) slope: {slope1:.3f}, Deviation from -5/3: {deviation_eng:.2f}%, R²: {r_value1**2:.3f}")
     print(f"Enstrophy(EST) slope: {slope2:.3f}, Deviation from -4: {deviation_est:.2f}%, R²: {r_value2**2:.3f}")
-
+    print(k_diss, k_eps_val)
     # 결과 저장
     df = pd.DataFrame([[k_eps_val, slope1, slope2, r_value1**2, r_value2**2, deviation_eng, deviation_est]], 
                         columns=["k_eps", "Slope_ENG", "Slope_EST", "R2_ENG", "R2_EST", "Deviation_ENG(%)", "Deviation_EST(%)"])
@@ -134,15 +134,15 @@ def fitting2(files, k_i, nu, csv_filename):
 
     for file in files:
         label = float(file.split('/')[-1].split('_')[0])
-        
+
         k, e_k = get_ek(file)
         e_k[0] = 10e-21
         u, v = sep(file)
         u, v = resizing(u, v)
         eps = energy_dissipation(u, v, nu)
-
+        omega, _ = get_vorticity(file)
         # k_diss
-        k_diss = kd_2d(eps, nu)
+        k_diss = k_v(omega, nu)
         k_diss_vals.append(k_diss)
 
         # k_eps
@@ -205,9 +205,9 @@ def average_fitting2(files, k_i, nu, csv_filename, title="Averaged E(k)"):
         u, v = sep(file)
         u, v = resizing(u, v)
         eps = energy_dissipation(u, v, nu)
+        omega, _ = get_vorticity(file)
 
-        label = float(file.split('/')[-1].split('_')[0]) 
-        k_diss = kd_2d(eps, nu)
+        k_diss = k_v(omega, nu)
         k_diss_vals.append(k_diss)
 
     all_ek = np.array(all_ek)
