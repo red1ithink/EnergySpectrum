@@ -181,8 +181,8 @@ files4_vor = [
 
 
 files5 = [
-    # '../valid/u/0.5_ux_uy_data.txt',
-    # '../valid/u/1_ux_uy_data.txt',
+    '../valid/u/0.5_ux_uy_data.txt',
+    '../valid/u/1_ux_uy_data.txt',
     '../valid/u/1.5_ux_uy_data.txt',
     '../valid/u/2_ux_uy_data.txt',
     '../valid/u/2.5_ux_uy_data.txt',

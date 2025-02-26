@@ -20,7 +20,7 @@ from visualize import create_animation
 from DefineFiles import *
 
 #grid
-N = 1024
+N = 2048
 
 def sep(data):
     df = pd.read_csv(data)
@@ -46,7 +46,7 @@ def get_vorticity(file):
     
     data = pd.read_csv(file, header=0).values.flatten()
     data = data[~np.isnan(data)]
-    data = data[0:1024 * 1024]
+    data = data[0:N * N]
     label = file.split('/')[-1].split('_')[0]
     
     return data, label
@@ -288,12 +288,12 @@ def energy_spectrum_from_vorticity(L, nx,ny,w):
         
     return en, n
 ##### energy dissipation code by KyunYoon Han #####
-def ddy(f, dx = 6.283/1024): #y방향 미분
+def ddy(f, dx = 6.283/N): #y방향 미분
   dudy = np.gradient(f,axis=0)
   dudy = dudy/dx
   return dudy
 
-def ddx(f, dx = 6.283/1024): #x방향 미분
+def ddx(f, dx = 6.283/N): #x방향 미분
   dudx = np.gradient(f,axis=1)
   dudx = dudx/dx
   return dudx
