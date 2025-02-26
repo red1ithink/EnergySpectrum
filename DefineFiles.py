@@ -173,3 +173,35 @@ files4_vor = [
     '../2x/vor/150_vor_data.txt',
     
 ]
+
+
+
+files5 = [
+    '../valid/u/0.5_ux_uy_data.txt',
+    '../valid/u/1_ux_uy_data.txt',
+    '../valid/u/1.5_ux_uy_data.txt',
+    '../valid/u/2_ux_uy_data.txt',
+    '../valid/u/2.5_ux_uy_data.txt',
+    '../valid/u/3_ux_uy_data.txt',
+    '../valid/u/3.5_ux_uy_data.txt',
+    '../valid/u/4_ux_uy_data.txt',
+    '../valid/u/4.5_ux_uy_data.txt',
+    '../valid/u/5_ux_uy_data.txt',
+    '../valid/u/5.5_ux_uy_data.txt',
+    '../valid/u/6_ux_uy_data.txt',
+]
+
+files5_vor = [
+    # '../valid/vor/0.5_vor_data.txt',
+    # '../valid/vor/1_vor_data.txt',
+    '../valid/vor/1.5_vor_data.txt',
+    '../valid/vor/2_vor_data.txt',
+    '../valid/vor/2.5_vor_data.txt',
+    '../valid/vor/3_vor_data.txt',
+    '../valid/vor/3.5_vor_data.txt',
+    '../valid/vor/4_vor_data.txt',
+    '../valid/vor/4.5_vor_data.txt',
+    '../valid/vor/5_vor_data.txt',
+    '../valid/vor/5.5_vor_data.txt',
+    '../valid/vor/6_vor_data.txt',
+]
