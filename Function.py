@@ -39,7 +39,7 @@ def get_ek(file):
     global N
     ux, uy = sep(file)
     ux,uy = resizing(ux, uy)
-    k, e_k = ek(ux, uy, 1024)
+    k, e_k = ek(ux, uy, N)
     return k, e_k
 
 def get_vorticity(file):
@@ -362,8 +362,10 @@ def enstrophy_diss(omega, nu):
     
     return zeta
     
-def kd_2d(zeta, nu):
-    kd = (zeta/(nu)**3)**(1/6)
+##k_v from <Statistical Physics Interpretation of Southern Ocean Mesoscale Turbulence>##
+def kd_2d(eps, nu):
+    eta = kom_scale(eps, nu)
+    kd = (eta/(nu)**3)**(1/6)
     return kd
 
 def kom_scale(eps, nu):
