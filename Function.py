@@ -20,7 +20,7 @@ from visualize import create_animation
 from DefineFiles import *
 
 #grid
-N = 2048
+N = 1024
 
 def sep(data):
     df = pd.read_csv(data)
