@@ -23,7 +23,8 @@ files = [
 ]
 
 files_vor = [
-    '../proceed_data/proceed_data_v_given/processed_data_vor/0.2_vor_data.txt',
+    # '../proceed_data/proceed_data_v_given/processed_data_vor/0.2_vor_data.txt',
+    '../proceed_data/proceed_data_v_given/processed_data_vor/1_vor_data.txt',
     '../proceed_data/proceed_data_v_given/processed_data_vor/5_vor_data.txt',
     '../proceed_data/proceed_data_v_given/processed_data_vor/10_vor_data.txt',
     '../proceed_data/proceed_data_v_given/processed_data_vor/15_vor_data.txt',
@@ -78,7 +79,8 @@ files2 = [
 ]
 
 files2_vor = [
-    '../proceed_data/proceed_data_v_10/processed_data_vor/0.2_vor_data.txt',
+    # '../proceed_data/proceed_data_v_10/processed_data_vor/0.2_vor_data.txt',
+    '../proceed_data/proceed_data_v_10/processed_data_vor/1_vor_data.txt',
     '../proceed_data/proceed_data_v_10/processed_data_vor/5_vor_data.txt',
     '../proceed_data/proceed_data_v_10/processed_data_vor/15_vor_data.txt',
     '../proceed_data/proceed_data_v_10/processed_data_vor/20_vor_data.txt',
@@ -114,7 +116,8 @@ files3 = [
 ]
 
 files3_vor = [
-    '../proceed_data/proceed_data_v_half/processed_data_vor/0.2_vor_data.txt',
+    # '../proceed_data/proceed_data_v_half/processed_data_vor/0.2_vor_data.txt',
+    '../proceed_data/proceed_data_v_half/processed_data_vor/1_vor_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_vor/5_vor_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_vor/10_vor_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_vor/15_vor_data.txt',
@@ -130,7 +133,7 @@ files3_vor = [
     '../proceed_data/proceed_data_v_half/processed_data_vor/130_vor_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_vor/150_vor_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_vor/170_vor_data.txt',
-    '../proceed_data/proceed_data_v_half/processed_data_vor/186_vor_data.txt',
+    #'../proceed_data/proceed_data_v_half/processed_data_vor/186_vor_data.txt',
 ]
 
 # nu = 0.00002(x2)
@@ -156,7 +159,8 @@ files4 = [
 ]
 
 files4_vor = [
-    '../2x/vor/0.2_vor_data.txt',
+    # '../2x/vor/0.2_vor_data.txt',
+    '../2x/vor/1_vor_data.txt',
     '../2x/vor/5_vor_data.txt',
     '../2x/vor/10_vor_data.txt',
     '../2x/vor/15_vor_data.txt',

@@ -126,7 +126,6 @@ def ek(u, v, n_bins):
 
     return k_vals, E_k
 
-
 def energy_spectrum_from_velocity(nx, ny, dx, u, v):
     """
     Computes the 2D isotropic energy spectrum from a 2D velocity field (u,v).
@@ -358,20 +357,21 @@ def enstrophy_diss(omega, nu):
     # |∇ω|²
     grad_omega_squared = domega_dx**2 + domega_dy**2
 
-    zeta = nu * np.mean(grad_omega_squared)
+    eta = nu * np.mean(grad_omega_squared)
     
-    return zeta
+    return eta
     
 ##k_v from <Statistical Physics Interpretation of Southern Ocean Mesoscale Turbulence>##
-def kd_2d(eps, nu):
-    eta = kom_scale(eps, nu)
-    kd = (eta/(nu)**3)**(1/6)
-    return kd
+def k_v(omega, nu):
+    eta = enstrophy_diss(omega, nu)
+    kv = (eta/(nu)**3)**(1/6)
+    return kv
 
-def kom_scale(eps, nu):
-    eta = ((nu**3)/eps)**(1/4)
+##k_v 3d from <David Statistical Physics Interpretation of Southern Ocean Mesoscale Turbulence>
+def kv_3d(eps, nu):
+    kv = ((nu**3)/eps)**(-1/4)
 
-    return eta
+    return kv
 
 def kd_range(eps, nu):
     kd = (eps**(1/4))/(nu**(3/4))
