@@ -431,7 +431,7 @@ def energy_flux(u, v, L=6.283):
     T_k = -np.real(u_hat.conj() * Nx_hat + v_hat.conj() * Ny_hat)
     
     # Shell averaging
-    k_bins = np.arange(1, 1024)
+    k_bins = np.arange(1, 2048)
     T_k_binned = np.zeros_like(k_bins, dtype=np.float64)
     
     # Improved shell averaging with proper normalization

@@ -98,14 +98,14 @@ def create_velocity_animation(data_list, labels, nu, num_files, nx, ny, Lx, Ly, 
 
 # ✅ 실행 예제 (값만 수정하면 자동 적용)
 if __name__ == "__main__":
-    folder_path = "../proceed_data/proceed_data_v_half/processed_data_u/"  # ✅ 데이터 폴더 경로 설정
-    nx, ny = 1024, 1024  # ✅ 원하는 그리드 크기 설정
-    Lx, Ly = 6.283, 6.283  # ✅ 원하는 도메인 크기 설정
+    folder_path = "../valid/u/"  # ✅ 데이터가 있는 폴더 경로
+    nx, ny = 2048, 2048  # ✅ 그리드 크기
+    Lx, Ly = 6.283, 6.283  # ✅ 도메인 크기
     interval_ms = 10
-    nu = 0.000005  # ✅ 점성 계수
+    nu = 0.00025  # ✅ 점성 계수
 
     # ✅ 데이터 로드
     data_list, labels, num_files = load_velocity_data(folder_path, nx, ny)
 
     # ✅ 애니메이션 생성 및 저장
-    create_velocity_animation(data_list, labels, nu, num_files, nx, ny, Lx, Ly, save_filename="[x0.5]Velocity.gif", interval_ms=10)
+    create_velocity_animation(data_list, labels, nu, num_files, nx, ny, Lx, Ly, save_filename="Velocity.gif", interval_ms=10)
