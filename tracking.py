@@ -22,7 +22,7 @@ def tracking2_data(k, ek, pen, name):
 
     # interpolation
     # E(k) ~ k^n => log(E) ~ n*log(k) + C
-    new_log_k = np.linspace(log_k.min(), log_k.max(), 1023)
+    new_log_k = np.linspace(log_k.min(), log_k.max(), 2047)
     interp_func = interp1d(log_k, smoothed_log_E, kind='linear', fill_value='extrapolate')
     new_log_E = interp_func(new_log_k)
     new_k = np.exp(new_log_k)
@@ -131,7 +131,7 @@ def tracking2(file, pen, name):
     polyorder = 3
     smoothed_log_E = savgol_filter(log_E, window_length, polyorder)
 
-    new_log_k = np.linspace(log_k.min(), log_k.max(), 1023)
+    new_log_k = np.linspace(log_k.min(), log_k.max(), 2047)
     interp_func = interp1d(log_k, smoothed_log_E, kind='linear', fill_value='extrapolate')
     new_log_E = interp_func(new_log_k)
     new_k = np.exp(new_log_k)
