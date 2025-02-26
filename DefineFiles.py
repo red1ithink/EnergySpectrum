@@ -3,7 +3,7 @@ files = [
     #'../proceed_data/proceed_data_v_given/processed_data_u/0_ux_uy_data.txt',
     #'../proceed_data/proceed_data_v_given/processed_data_u/0.2_ux_uy_data.txt',
     #'../proceed_data/proceed_data_v_given/processed_data_u/0.4_ux_uy_data.txt',
-    '../proceed_data/proceed_data_v_given/processed_data_u/1_ux_uy_data.txt',
+    # '../proceed_data/proceed_data_v_given/processed_data_u/1_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_given/processed_data_u/5_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_given/processed_data_u/10_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_given/processed_data_u/15_ux_uy_data.txt',
@@ -24,7 +24,7 @@ files = [
 
 files_vor = [
     # '../proceed_data/proceed_data_v_given/processed_data_vor/0.2_vor_data.txt',
-    '../proceed_data/proceed_data_v_given/processed_data_vor/1_vor_data.txt',
+    # '../proceed_data/proceed_data_v_given/processed_data_vor/1_vor_data.txt',
     '../proceed_data/proceed_data_v_given/processed_data_vor/5_vor_data.txt',
     '../proceed_data/proceed_data_v_given/processed_data_vor/10_vor_data.txt',
     '../proceed_data/proceed_data_v_given/processed_data_vor/15_vor_data.txt',
@@ -48,7 +48,7 @@ files2 = [
     #'../proceed_data/proceed_data_v_10/processed_data_u/0.2_ux_uy_data.txt',
     # '../proceed_data/proceed_data_v_10/processed_data_u/0.4_ux_uy_data.txt',
     # '../proceed_data/proceed_data_v_10/processed_data_u/0.6_ux_uy_data.txt',
-    '../proceed_data/proceed_data_v_10/processed_data_u/1_ux_uy_data.txt',
+    # '../proceed_data/proceed_data_v_10/processed_data_u/1_ux_uy_data.txt',
     # '../proceed_data/proceed_data_v_10/processed_data_u/1.2_ux_uy_data.txt',
     # '../proceed_data/proceed_data_v_10/processed_data_u/1.4_ux_uy_data.txt',
     # '../proceed_data/proceed_data_v_10/processed_data_u/1.6_ux_uy_data.txt',
@@ -80,7 +80,7 @@ files2 = [
 
 files2_vor = [
     # '../proceed_data/proceed_data_v_10/processed_data_vor/0.2_vor_data.txt',
-    '../proceed_data/proceed_data_v_10/processed_data_vor/1_vor_data.txt',
+    # '../proceed_data/proceed_data_v_10/processed_data_vor/1_vor_data.txt',
     '../proceed_data/proceed_data_v_10/processed_data_vor/5_vor_data.txt',
     '../proceed_data/proceed_data_v_10/processed_data_vor/15_vor_data.txt',
     '../proceed_data/proceed_data_v_10/processed_data_vor/20_vor_data.txt',
@@ -95,7 +95,7 @@ files2_vor = [
 files3 = [
     # '../../Dropbox/datafile/2x_data/0.4_ux_uy_data.txt',
     # '../../Dropbox/datafile/2x_data/1_ux_uy_data.txt',
-     '../proceed_data/proceed_data_v_half/processed_data_u/1_ux_uy_data.txt',
+    #  '../proceed_data/proceed_data_v_half/processed_data_u/1_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_u/5_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_u/10_ux_uy_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_u/15_ux_uy_data.txt',
@@ -117,7 +117,7 @@ files3 = [
 
 files3_vor = [
     # '../proceed_data/proceed_data_v_half/processed_data_vor/0.2_vor_data.txt',
-    '../proceed_data/proceed_data_v_half/processed_data_vor/1_vor_data.txt',
+    # '../proceed_data/proceed_data_v_half/processed_data_vor/1_vor_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_vor/5_vor_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_vor/10_vor_data.txt',
     '../proceed_data/proceed_data_v_half/processed_data_vor/15_vor_data.txt',
@@ -140,7 +140,7 @@ files3_vor = [
 files4 = [
     # '../../Dropbox/datafile/2x_data/0.4_ux_uy_data.txt',
     # '../../Dropbox/datafile/2x_data/1_ux_uy_data.txt',
-     '../2x/u/1_ux_uy_data.txt',
+    #  '../2x/u/1_ux_uy_data.txt',
     '../2x/u/5_ux_uy_data.txt',
     '../2x/u/10_ux_uy_data.txt',
     '../2x/u/15_ux_uy_data.txt',
@@ -160,7 +160,7 @@ files4 = [
 
 files4_vor = [
     # '../2x/vor/0.2_vor_data.txt',
-    '../2x/vor/1_vor_data.txt',
+    # '../2x/vor/1_vor_data.txt',
     '../2x/vor/5_vor_data.txt',
     '../2x/vor/10_vor_data.txt',
     '../2x/vor/15_vor_data.txt',
@@ -181,8 +181,8 @@ files4_vor = [
 
 
 files5 = [
-    '../valid/u/0.5_ux_uy_data.txt',
-    '../valid/u/1_ux_uy_data.txt',
+    # '../valid/u/0.5_ux_uy_data.txt',
+    # '../valid/u/1_ux_uy_data.txt',
     '../valid/u/1.5_ux_uy_data.txt',
     '../valid/u/2_ux_uy_data.txt',
     '../valid/u/2.5_ux_uy_data.txt',
